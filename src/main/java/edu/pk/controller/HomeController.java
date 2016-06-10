@@ -4,9 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-
-import java.util.Arrays;
 
 @Controller
 public class HomeController {
@@ -18,7 +15,6 @@ public class HomeController {
         loginUser.setSex('M');
         model.addAttribute(loginUser);
 
-        model.addAttribute("countryList", Arrays.asList("India","China","Bangladesh","Sri Lanka"));
         return "home";
     }
 

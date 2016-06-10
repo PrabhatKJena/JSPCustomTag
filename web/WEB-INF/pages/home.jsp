@@ -3,14 +3,23 @@
 <html>
 <head>
     <title>Home Page</title>
+    <style type="text/css">
+    	.b{
+    		font-weight: bold;
+    		font-size: 16px;
+		 }
+		 .err-msg{
+		 	color: red;
+		 }
+		 
+    </style>
     <script type="text/javascript">
-        alert('${countryList}');
     </script>
 </head>
 <body>
-Your Email : <tags:txtBox caption="Enter Your Email" fontColor="red" fontSize="18" value="${loginUser.email}"></tags:txtBox>
+Your Email : <tags:txtBox caption="Enter Your Email" value="${loginUser.email}"></tags:txtBox>
 <br>
-Country : <tags:dropDown default="Select Country" items="${countryList}"></tags:dropDown>
+Country : <tags:dropDown defaultVal="Select Country" items="India,China,Pakistan"></tags:dropDown>
 
 </body>
 </html>
